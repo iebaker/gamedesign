@@ -1,0 +1,9 @@
+enum GameState {
+ START,
+ DRAWING_PATH,
+ SETTING_GOAL,
+ SETTING_START,
+ PLAYING,
+ WON,
+ LOST
+}
