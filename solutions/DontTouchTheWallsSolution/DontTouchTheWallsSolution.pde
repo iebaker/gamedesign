@@ -3,8 +3,8 @@ color pathColor;
 color backgroundColor;
 color goalColor;
 color startColor;
-color winColor;
-color lostColor;
+color winScreenColor;
+color lostScreenColor;
 float brushRadius;
 
 void setup() {
@@ -15,8 +15,8 @@ void setup() {
   backgroundColor = color(0);
   goalColor = color(0, 255, 0);
   startColor = color(0, 0, 255);
-  winColor = color(0, 255, 0);
-  lostColor = color(255, 0, 0);
+  winScreenColor = color(0, 255, 0);
+  lostScreenColor = color(255, 0, 0);
   brushRadius = 20;
   
   background(backgroundColor);
@@ -36,9 +36,9 @@ void draw() {
       gameState = GameState.WON; 
     }
   } else if (gameState == GameState.WON) {
-    background(winColor);
+    background(winScreenColor);
   } else if (gameState == GameState.LOST) {
-    background(lostColor); 
+    background(lostScreenColor); 
   }
 }
 
